@@ -48,10 +48,10 @@ if talkToAdam == "" {
     AdamSays.Nothing
 }
 
-// If else loop
+var tempString = "Hello!"
+if tempString.uppercaseString == tempString {
+    println("ALL")
+}
 
 
 
-
-var initialString = "test"
-case "

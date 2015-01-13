@@ -49,30 +49,22 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     func whatShouldAdamSay(textString: String) -> String {
         
-        
         for char in textString {
             if char == "?" {
                 return "Sure"
             }
         }
         
-        var output = ""
-        var charCount = 0
-        for char in textString {
-            charCount += 1
-            var tempString = String(char) //cast char as String
-            if tempString.lowercaseString != tempString {
-                output += tempString
-            }
-        }
-        if textString == output && charCount > 0 {
+        var tempString = textString.uppercaseString
+        
+        if tempString == textString {
+        
             return "Woah, chill out!"
         }
 
         if textString == "" {
             return ""
         }
-        
         
         return "Whatever"
     
